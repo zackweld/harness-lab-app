@@ -18,7 +18,7 @@ spec:
         - name: lab-app
           # Hard-coded for the lab. Keep the tag in sync
           # with what the CI stage pushed.
-          image: zackweld628/lab-app:<+pipeline.sequenceId>
+          image: "{{.Values.image}}"
           ports:
             - containerPort: 8080
           readinessProbe:

@@ -1,0 +1,1 @@
+image: zackweld628/lab-app:<+pipeline.sequenceId>
