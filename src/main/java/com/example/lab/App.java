@@ -7,7 +7,7 @@ import java.nio.charset.StandardCharsets;
 
 public class App {
     public static void main(String[] args) throws IOException {
-        String version = System.getenv().getOrDefault("APP_VERSION", "3");
+        String version = System.getenv().getOrDefault("APP_VERSION", "4");
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
         server.createContext("/health", exchange -> {
